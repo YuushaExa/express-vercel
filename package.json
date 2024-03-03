@@ -1,15 +1,15 @@
 {
-  "name": "express-vercel",
+  "name": "next-app",
   "version": "1.0.0",
-  "description": "Deploy express js to vercel.",
-  "main": "index.js",
-  "engines": {
-    "node" : "18.x"
-  },
+  "description": "Next.js application",
   "scripts": {
-    "start": "node index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
