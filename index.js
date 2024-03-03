@@ -1,10 +1,16 @@
-const express = require("express");
+// Import required modules
+const express = require('express');
+
+// Create an instance of the Express application
 const app = express();
-const product = require("./api/product");
 
-app.use(express.json({ extended: false }));
+// Define a route for the root endpoint
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
 
-app.use("/api/product", product);
-
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => console.log(`Server is running in port ${PORT}`));
+// Start the server
+const port = 3000; // Specify the port number
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
