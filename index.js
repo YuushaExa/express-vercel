@@ -1,8 +1,8 @@
-// Import required modules
 const express = require('express');
-
-// Create an instance of the Express application
 const app = express();
+
+// Require and execute the script file
+require('./script.js');
 
 // Define a route for the root endpoint
 app.get('/', (req, res) => {
@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 // Start the server
-const port = 3000; // Specify the port number
+const port = 3000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
