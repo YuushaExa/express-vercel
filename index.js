@@ -1,6 +1,6 @@
 const http = require('http');
 const { createReadStream } = require('fs');
-const { join } = require('path');
+const { join } = require('path'); 
 
 // Require and execute the script file
 require('./script.js');
