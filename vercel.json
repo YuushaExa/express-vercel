@@ -12,8 +12,8 @@
       "dest": "/"
     },
     {
-      "src": "/script.js",
-      "dest": "/script.js"
+      "src": "/public/script.js",
+      "dest": "/public/script.js"
     }
   ]
 }
